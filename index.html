@@ -13,28 +13,44 @@
     </head>
 
     <body>
-    <div class="bloc_page"></div>
-
+    <div class="bloc_page">
     <!--header-->
     <header>
-                <!--Logo Reservia-->
-                <div class="logo">
-                    <img src="images/logo/Reservia@3x.png" alt="Logo" />
-                </div>
-                <!--Menu-->
-                <div class="menu">
-                    <nav>
-                        <ul>
-                            <li><a href="#Hébergements">Hébergements</a></li>
-                            <li><a href="#Activités">Activités</a></li>
-                            <li><a href="#S'inscrire">S'inscrire</a></li>
-                        </ul>
-                    </nav>
-                </div>
+        <!--Logo Reservia-->
+        <div class="logo">
+            <img src="images/logo/Reservia@3x.png" alt="Logo" />
+        </div>
+        <!--Menu-->
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#Hébergements">Hébergements</a></li>
+                    <li><a href="#Activités">Activités</a></li>
+                    <li><a href="#S'inscrire">S'inscrire</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <!--Slogan-->
-    <h1 class="Slogan"><strong>votre hébergement pour des vacances de rêve</strong></h1>
-    <p>En plein centre ville ou en pleine nature</p>
+
+        <!--Slogan-->
+        <h1 class="Slogan"><strong>votre hébergement pour des vacances de rêve</strong></h1>
+        <p>En plein centre ville ou en pleine nature</p>
+        <!--Barre de recherche-->
+        <div class="searchbar" titre="Recherche">
+            <!--logo geolocalisation-->
+            <div class="bloc_geo">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <!--suggestion recherche ville-->
+            <form class="city" method="post" action="ville.php" >
+                <label for="Ville"></label>
+                <input class="Ville" class="Ville" type="search" name="Ville" placeholder="Marseille, France" autofocus="">
+            </form>
+            <!--Bouton Rechercher-->
+            <button class="rechercher" type="submit" form="city" value="Rechercher">Rechercher</button>
+        </div>
+        <!--Filtres de recherche-->
+        
     <section>
         <div class="Hébergements à Marseille">
             <h1>Hébergements à Marseille</h1>
