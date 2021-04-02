@@ -1,16 +1,6 @@
 img{
     max-width: 100%;
 }
-@font-face
-{
-    font-family: 'ralewaymedium';
-    src: url(font/static/Raleway-LightItalic.ttf) format("truetype");
-}
-@font-face
-{
-    font-family: 'ralewaybold';
-    src: url(font/static/Raleway-Bold.ttf) format("truetype");
-}
 .bloc_page
 {
     margin-left: 0.313rem;
@@ -22,60 +12,4 @@ header
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-.menu
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-nav
-{
-    text-align: right;
-    align-self: flex-end;
-}
-nav ul
-{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
-nav li
-{
-    font-size: 0.8em;
-    font-family: 'ralewaybold';
-    font-style: normal;
-    min-width: 6.25rem;
-    display: inline-flex;
-    height: 2.5rem;
-    align-items: center;
-}
-nav a:hover
-{
-    border-top: 0.125rem solid #0065fc;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-}
-header a /*Eléments du menu de navigation*/
-{
-    text-decoration: none;
-    flex-wrap: wrap;
-    color: #0065fc;
-    width: 110px;
-}
-h1
-{
-    font-size: 1.1em;
-    flex-wrap: wrap;
-    min-width: 15rem;
-    display: block;
-    font-family: 'ralewaybold';
-}
-h1 + p
-{
-    font-size: 0.8em;
-    font-family: 'ralewaymedium';
-    flex-wrap: wrap;
-    min-width: 15rem;
 }
