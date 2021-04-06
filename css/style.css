@@ -11,6 +11,10 @@ header
     display: flex;
     justify-content: space-between;
 }
+.logo
+{
+    max-width: 10%;
+}
 nav li
 {
     font-size: 0.8rem;
@@ -38,13 +42,20 @@ nav a:hover
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
 }
-.slogan h1
+.slogan
 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     flex-wrap: wrap;
     min-width: 15rem;
     font-family:"Raleway";
     font-weight: bold;
+}
+.slogan p
+{
+    font-family:"Raleway";
+    font-size: 0.7rem;
+    flex-wrap: wrap;
+    min-width: 15rem;
 }
 form
 {
@@ -88,6 +99,11 @@ input
     min-width: 11.25rem;
     height: 1.875rem;
 }
+.fas.fa-map-marker-alt
+{
+    display: flex;
+    align-items: center;
+}
 .filters
 {
     display: flex;
@@ -95,7 +111,12 @@ input
     min-height: 1.25rem;
     align-items: center;
     align-content: space-around;
-    flex-wrap: nowrap;
+}
+.filters h2
+{
+    font-size: 0.8rem;
+    font-family:"Raleway";
+    font-weight: bold;
 }
 .filters-list 
 {
@@ -106,6 +127,31 @@ input
     justify-content: space-around;
     flex-wrap: wrap;
     padding-left: 1.25rem;
+}
+.filters-list a
+{
+    display:flex;
+    align-items:baseline;
+    
+}
+.filters-list p
+{
+    border-left: none;
+    background-color: #ffffff;
+    font-size: 0.8rem;
+    font-family:"Raleway";
+    font-weight: bold;
+    height: 30px;
+    border-top-right-radius: 15px 15px;
+    border-bottom-right-radius: 15px 15px;
+    border: 2px solid #f2f2f2;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+}
+.filter:hover
+{
+    background-color: #deebff;
 }
 .icon
 {
@@ -122,4 +168,80 @@ input
 .icon i
 {
     margin: auto;
+    max-width: 45%;
+    color: #0065fc;
+}
+.result-number
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+.icon-info
+{
+    display: flex;
+    border: 1px solid#f2f2f2;
+    border-radius: 8px 8px;
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.fas.fa-info
+{
+    color:#0065fc;
+    display: flex;
+    align-items: center;
+}
+.result-number p
+{
+    font-family: 'Raleway';
+    font-size: 0.7em;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.section-1
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    column-gap: 15px;
+}
+.lodgings
+{
+    background-color: #f2f2f2;
+    border-radius: 10px 10px;
+    margin-top: 20px;
+}
+.lodgings h2
+{
+    font-size: 1rem;
+    font-family:"Raleway";
+    font-weight: bold;
+}
+.lodgings-grid
+{
+    min-width: 310px;
+    max-width: 1020px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: center;
+}
+.lodging
+{
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 2px 4px 2px #dfdbdb;
+    max-width: 20%;
 }
