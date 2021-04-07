@@ -1,6 +1,4 @@
-img{
-    max-width: 100%;
-}
+
 .bloc_page
 {
     margin-left: 0.313rem;
@@ -11,9 +9,9 @@ header
     display: flex;
     justify-content: space-between;
 }
-.logo
+.logo img
 {
-    max-width: 10%;
+    max-width: 30%;
 }
 nav li
 {
@@ -208,7 +206,6 @@ input
 {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row-reverse;
     justify-content: space-around;
     column-gap: 15px;
 }
@@ -216,7 +213,7 @@ input
 {
     background-color: #f2f2f2;
     border-radius: 10px 10px;
-    margin-top: 20px;
+    margin: auto;
 }
 .lodgings h2
 {
@@ -243,5 +240,331 @@ input
     margin-left: 10px;
     margin-right: 10px;
     box-shadow: 2px 4px 2px #dfdbdb;
-    max-width: 20%;
+}
+article a 
+{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.lodging:hover
+{
+    background-color: #deebff;
+    transform: scale(1.04);
+}
+.lodging img 
+{
+    width: 234px;
+    max-height: 120px;
+    padding-top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 10px 10px;
+
+}
+.lodging-name
+{
+    margin-top: 2px;
+    padding-left: 10px;
+    font-size: 0.7em;
+    font-weight: bold;
+    height: 6px;
+    font-family: 'Raleway';
+}
+.lodging-price
+{
+    padding-left: 10px;
+    font-family: 'Raleway';
+    font-size: 0.7em;
+    height: 6px;
+}
+.rating
+{
+    padding-left: 10px;
+    margin-left: 1px;
+    height: 6px;
+    padding-bottom: 10px;
+}
+.rating i
+{
+    max-width: 8px;
+    margin-left: 0px;
+}
+.fas.fa-star
+{
+    padding-bottom: 25px;
+    color: #0065fc;
+}
+.far.fa-star
+{
+    padding-bottom: 25px;
+    color: #deebff;
+}
+.more
+{
+    min-width: 100px;
+    font-size: 0.8em;
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: black;
+    background-color: #f2f2f2;
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.populars
+{
+    background-color: #f2f2f2;
+    border-radius: 10px 10px;
+    margin-top: 20px;
+}
+.popular-grid
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 360px;
+}
+.fas.fa-chart-line
+{
+    width: 20px;
+    height: 20px;
+    position: flex;
+    right: 0px;
+}
+.populars h2
+{
+    height: 20px;
+    font-size: 1em;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+.popular
+{
+    min-width: 280px;
+    background-color: #ffffff;
+    border-radius: 10px 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    box-shadow: 2px 4px 2px #dfdbdb;
+}
+.popular:hover
+{
+    background-color: #deebff;
+    transform: scale(1.04);
+}
+.popular a
+{
+    text-decoration: none;
+    display:flex;
+    flex-direction:row;
+    margin-left: auto;
+    margin-right: auto;
+}
+.popular img
+{
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 96px;
+    height: 96px;
+    border-top-left-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+}
+.activity
+{
+    display:inline-block;
+}
+.activity-title
+{
+    height: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 1em;
+    font-family: 'Raleway';
+}
+.activity-grid a
+{
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: bold;
+    display: block;
+}
+.activity-grid
+{
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 2;
+    grid-gap: 15px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 10px 10px;
+    margin-top: 20px;
+    min-width: 340px;
+}
+figure
+{
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 10px 10px;
+    margin-left: 0px;
+    flex-wrap: wrap;
+    box-shadow: 2px 4px 2px #dfdbdb;
+}
+figure:hover
+{
+    background-color: #deebff;
+    transform: scale(1.04);
+}
+
+figure img
+{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+}
+figcaption
+{
+    font-size: 0.8em;
+    font-family: 'Raleway';
+    font-weight: bold;
+    margin-left: 15px;
+    height: 25px;
+    width: 250px;
+    padding-top: 5px;
+    color: black;
+}
+.vieux-port
+{
+    grid-column: 1;
+    grid-row: 1 / 2;
+}
+
+.vieux-port img
+{
+    height: 275px;
+}
+
+.fort-pomegues
+{
+    grid-column: 2; 
+    grid-row: 1;
+    align-self:baseline;
+}
+
+.fort-pomegues img
+{
+    max-height: 130px;
+}
+
+.iles-frioul
+{
+    grid-column: 2;
+    grid-row: 1;
+    align-self: flex-end;
+}
+
+.iles-frioul img
+{
+    max-height: 85px;
+}
+
+.parc-national
+{
+    grid-column: 3; 
+    grid-row: 1 / 2; 
+}
+
+.parc-national img
+{
+    height: 275px;
+}
+
+.notre-dame
+{
+    grid-column: 4;
+    grid-row: 1; 
+}
+
+.notre-dame img
+{
+    object-position: 50% 20%;
+    max-height: 105px;
+}
+
+.parc-longchamp
+{
+    grid-column: 4;
+    grid-row: 1;
+    align-self: flex-end;
+}
+
+.parc-longchamp img
+{
+    max-height: 110px;
+}
+footer
+{
+    display: flex;
+    align-items: baseline;
+    margin-top: 40px;
+    background-color: #f2f2f2;
+    flex-wrap: wrap;
+    border-radius: 10px 10px;
+}
+.about
+{
+    display: inline-block;
+    width: 20%;
+    margin-left: 20px;
+    min-width: 240px;
+}
+.our-lodgings
+{
+    display: inline-block;
+    width: 20%;
+    margin-left: 20px;
+    min-width: 240px;
+}
+.assistance
+{
+    display: inline-block;
+    width: 20%;
+    margin-left: 20px;
+    min-width: 240px;
+}
+footer h2
+{
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 0.8em;
+}
+footer a
+{
+    text-decoration: none;
+    color: black;
+}
+footer ul
+{
+    list-style-type: none;
+    flex-wrap: nowrap;
+    padding-left: 0px;
+    margin-top: 5px;
+}
+footer li
+{
+    font-family: 'Raleway';
+    font-size: 0.7em;
+    padding-bottom: 8px; 
+    flex-wrap: nowrap;
 }
