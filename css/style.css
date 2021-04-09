@@ -214,7 +214,6 @@ input
 {
     background-color: #f2f2f2;
     border-radius: 10px 10px;
-    margin: auto;
 }
 .lodgings h2
 {
@@ -389,7 +388,7 @@ article a
 }
 .activity
 {
-    display:flex;
+    display:block;
 }
 .activity-title
 {
@@ -411,10 +410,13 @@ article a
 {
     display: grid;
     grid-gap: 15px;
-    justify-content: space-between;
     border-radius: 10px 10px;
     margin-top: 20px;
     min-width: 340px;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-areas: 
+    "zone1 zone2 zone4 zone5"
+    "zone1 zone3 zone4 zone6";
 }
 figure
 {
@@ -451,7 +453,9 @@ figcaption
 }
 .vieux-port
 {
-
+    grid-area: zone1;
+    display: flex;
+    margin: auto;
 }
 
 .vieux-port img
@@ -461,7 +465,8 @@ figcaption
 
 .fort-pomegues
 {
-
+    grid-area: zone2;
+    display: flex;
 }
 
 .fort-pomegues img
@@ -471,9 +476,8 @@ figcaption
 
 .iles-frioul
 {
-    grid-column: 2;
-    grid-row: 1;
-    align-self: flex-end;
+    grid-area: zone3;
+    display: flex;
 }
 
 .iles-frioul img
@@ -483,8 +487,8 @@ figcaption
 
 .parc-national
 {
-    grid-column: 3; 
-    grid-row: 1 / 2; 
+    grid-area: zone4;
+    display: flex;
 }
 
 .parc-national img
@@ -494,8 +498,8 @@ figcaption
 
 .notre-dame
 {
-    grid-column: 4;
-    grid-row: 1; 
+    grid-area: zone5;
+    display:flex;
 }
 
 .notre-dame img
@@ -506,9 +510,8 @@ figcaption
 
 .parc-longchamp
 {
-    grid-column: 4;
-    grid-row: 1;
-    align-self: flex-end;
+    grid-area: zone6;
+    display: flex;
 }
 
 .parc-longchamp img
