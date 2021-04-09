@@ -12,6 +12,13 @@ header
 .logo img
 {
     max-width: 30%;
+    padding-left: 2vw;
+}
+main
+{
+    padding-left: 2vw;
+    padding-right: 2vw
+    
 }
 nav li
 {
@@ -206,9 +213,6 @@ input
 .section-1
 {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    column-gap: 15px;
 }
 .lodgings
 {
@@ -231,6 +235,7 @@ input
     flex-direction: row;
     align-content: flex-start;
     align-items:flex-end;
+    margin-bottom: 3vh;
 }
 .lodging
 {
@@ -270,6 +275,7 @@ article a
     font-weight: bold;
     height: 6px;
     font-family: 'Raleway';
+    word-break: normal;
 }
 .lodging-price
 {
@@ -288,7 +294,6 @@ article a
 .rating i
 {
     max-width: 8px;
-    margin-left: 0px;
 }
 .fas.fa-star
 {
@@ -318,6 +323,7 @@ article a
 {
     background-color: #f2f2f2;
     border-radius: 10px 10px;
+    margin-left: auto;
 }
 .popular-grid
 {
@@ -327,12 +333,18 @@ article a
     justify-content: flex-start;
     min-width: 360px;
 }
+.pupular-description
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+}
+
 .fas.fa-chart-line
 {
     width: 20px;
     height: 20px;
-    right: 0px;
-
+    right: 10px;
 }
 .populars h2
 {
@@ -351,7 +363,7 @@ article a
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .popular
 {
@@ -455,7 +467,6 @@ figcaption
 {
     grid-area: zone1;
     display: flex;
-    margin: auto;
 }
 
 .vieux-port img
