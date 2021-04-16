@@ -3,15 +3,16 @@ body
 {
     font-family: "Raleway";
     display: flex;
-    align-items: center;
+    align-items: stretch;
     flex-direction: column;
+    margin:0;
 }
 header
 {
     display: flex;
     justify-content: space-between;
-    width: 94%;
     flex-wrap: wrap;
+    padding: 0 2rem;
 }
 .logo img
 {
@@ -26,28 +27,32 @@ main
 nav li
 {
     font-size: 0.8rem;
-    font-weight: bold;
     min-width: 6.25rem;
-    display:inline;
-    height: 2.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
 }
 nav a
 {
     text-decoration: none;
-    color: #0065fc;
+    color: black;
 }
 nav ul
 {
     list-style: none;
     display: flex;
-    flex-direction: row;
-    text-align: right;
+    height: 100%;
+    justify-content: center;
+    margin:0;
 }
-nav a:hover
+nav li:hover
 {
     border-top: 0.125rem solid #0065fc;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+}
+nav li:hover > a
+{
+    color: #0065fc;
 }
 .slogan-title
 {
@@ -362,24 +367,26 @@ input
 {
     display: grid;
     grid-gap: 1.875rem;
-    border-radius: 0.625rem 0.625rem;
     margin-top: 1.25rem;
-    min-width: 21.25rem;
     grid-template-areas: 
     "zone1 zone2 zone4 zone5"
+    "zone1 zone2 zone4 zone5"
+    "zone1 zone2 zone4 zone5"
+    "zone1 zone2 zone4 zone6"
+    "zone1 zone3 zone4 zone6"
+    "zone1 zone3 zone4 zone6"
     "zone1 zone3 zone4 zone6";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(7,2rem);
 }
 figure
-{
-    width: 100%;
-    background-color: #ffffff;
+{    
     border-radius: 0.625rem 0.625rem;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    flex-wrap: wrap;
+    margin:0;
+    height: 100%;
     box-shadow: 0.125rem 0.25rem 0.125rem #dfdbdb;
+    display: grid;
+    grid-template-rows: auto min-content;
 }
 figure:hover
 {
@@ -390,6 +397,8 @@ figure:hover
 figure img
 {
     width: 100%;
+    height: 100%;
+    min-height: 0;
     object-fit: cover;
     border-top-left-radius: 0.625rem 0.625rem;
     border-top-right-radius: 0.625rem 0.625rem;
@@ -407,69 +416,33 @@ figcaption
 .vieux-port
 {
     grid-area: zone1;
-    display: flex;
-}
-
-.vieux-port img
-{
-    height: 17.188rem;
 }
 
 .fort-pomegues
 {
     grid-area: zone2;
-    display: flex;
-}
-
-.fort-pomegues img
-{
-    max-height: 8.125rem;
 }
 
 .iles-frioul
 {
     grid-area: zone3;
-    display: flex;
-}
-
-.iles-frioul img
-{
-    max-height: 5.313rem;
 }
 
 .parc-national
 {
     grid-area: zone4;
-    display: flex;
-}
-
-.parc-national img
-{
-    height: 17.188rem;
 }
 
 .notre-dame
 {
     grid-area: zone5;
-    display:flex;
-}
-
-.notre-dame img
-{
-    object-position: 50% 20%;
-    max-height: 6.563rem;
 }
 
 .parc-longchamp
 {
     grid-area: zone6;
-    display: flex;
 }
 
-.parc-longchamp img
-{
-    max-height: 6.875rem;
-}
 footer
 {
     display: flex;
