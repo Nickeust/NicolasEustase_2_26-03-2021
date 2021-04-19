@@ -12,7 +12,8 @@ header
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 2rem;
+    width: 94%;
+    margin: auto;
 }
 .logo img
 {
@@ -24,21 +25,40 @@ main
     margin: auto;
     width: 94%;
 }
-nav li
+.menu li
 {
-    font-size: 0.8rem;
+    font-size: 0.8em;
     min-width: 6.25rem;
     display:flex;
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
 }
-nav a
+.subscribe
+{
+    font-size: 0.8em;
+    min-width: 6.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe-a
+{
+    color:#0065fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+.lodgings-a
 {
     text-decoration: none;
     color: black;
 }
-nav ul
+.activity-a
+{
+    text-decoration: none;
+    color: black;
+}
+.menu ul
 {
     list-style: none;
     display: flex;
@@ -46,19 +66,22 @@ nav ul
     justify-content: center;
     margin:0;
 }
-nav li:hover
+.menu li:hover
 {
     border-top: 0.125rem solid #0065fc;
 }
-nav li:hover > a
+.menu li:hover > a
 {
     color: #0065fc;
+
 }
 .slogan-title
 {
     font-size: 1rem;
     min-width: 15rem;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    margin-bottom: 0rem;
 }
 .slogan
 {
@@ -215,7 +238,7 @@ input
 .lodgings h2
 {
     font-size: 1rem;
-    margin-left: 0.625rem;
+    padding-bottom: 0.5rem;
 }
 .lodgings-grid
 {
@@ -284,19 +307,21 @@ input
     color: black;
     margin-left: 0.938rem;
     text-decoration: none;
+    display: flex;
+    margin-top: 2rem;
 }
 .populars
 {
     background-color: #f2f2f2;
     border-radius:1.2rem;
     display: grid;
+    padding: 1.5rem;
 }
 .popular-grid
 {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 1.5rem;
 }
 .pupular-description
 {
@@ -317,7 +342,8 @@ input
 {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
 }
 .popular
 {
@@ -351,9 +377,7 @@ input
 }
 .activity-title
 {
-    height: 0.625rem;
-    margin-left: 1.875rem;
-    margin-top: 1.875rem;
+    margin-top: 3rem;
     font-size: 1em;
     display: flex;
 
@@ -406,10 +430,8 @@ figure img
 figcaption
 {
     font-size: 0.8em;
-    font-weight: bold;
     margin-left: 0.938rem;
     height: 1.563rem;
-    width: 15.625rem;
     padding-top: 0.313rem;
     color: black;
 }
