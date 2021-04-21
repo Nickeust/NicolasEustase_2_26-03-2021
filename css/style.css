@@ -106,14 +106,21 @@ button
 {
     display: block;
     background-color: #0065fc;
-    font-size: 0.7rem;
-    font-weight: bold;
-    color: #ffffff;
     border-top-right-radius: 0.8rem;
     border-bottom-right-radius: 0.8rem;
     border: none;
     min-width: auto;
     width: 5.5rem;
+}
+.text-search-bar
+{
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+.fas.fa-search
+{
+    display:none;
 }
 input
 {
@@ -606,5 +613,95 @@ footer li
     {
         font-size: 0.94em;
         margin-bottom: 2rem;
+    }
+    label
+    {
+        border-top-left-radius: 1.1rem;
+        border-bottom-left-radius: 1.1rem;
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+    .fas.fa-map-marker-alt
+    {
+        font-size: 1.2em;
+    }
+    button
+    {
+    border-radius: 1.1rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    }
+    .text-search-bar
+    {
+        display:none;
+    }
+    .fas.fa-search
+    {
+        display:flex;
+        font-size: 1.3em;
+        color: #f2f2f2;
+        justify-content: center;
+    }
+    input
+    {
+        width: 14rem;
+        font-size: 1em;
+    }
+    .filters
+    {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .filters h2
+    {
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+    }
+    .filters-list
+    {
+        padding-left: 0rem;
+    }
+    .filters-list a
+    {
+        border-radius: 10rem;
+        height: 2.8rem;
+        margin-bottom: 0.8rem;
+        margin-right: 0.6rem;
+        border:0.2rem solid #f2f2f2;
+        border-left: none;
+    }
+    .icon
+    {
+        position: unset;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 3rem;
+    }
+    .icon i
+    {
+        font-size: 1.3em;
+    }
+    .filters-list p
+    {
+        font-size: 1em;
+        padding-left: 0.6rem;
+        padding-right: 0.9rem;
+        border: none;
+    }
+    .icon-info
+    {
+        border-radius: 2rem;
+        width: 2rem;
+        height: 1.5rem;
+        margin-left:0rem;
+    }
+    .fas.fa-info
+    {
+        font-size: 0.8em;
+    }
+    .result-number p
+    {
+        font-size: 1em;
     }
 }
