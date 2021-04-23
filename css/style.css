@@ -572,6 +572,12 @@ footer li
     }
     main
     {
+        width: unset;
+        margin: unset;
+    }
+    .reseach-filter-section
+    {
+        margin: auto;
         width: 90%;
     }
     .logo img
@@ -703,5 +709,122 @@ footer li
     .result-number p
     {
         font-size: 1em;
+    }
+    .section-1
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        column-gap: unset;
+    }
+    .populars
+    {
+        border-radius: unset;
+        padding: 1.5rem;
+    }
+    .populars h2
+    {
+        font-size: 1.4em;
+    }
+    .fas.fa-chart-line
+    {
+        font-size: 1.4em;
+    }
+    .popular
+    {
+        height: 8rem;
+    }
+    .popular img
+    {
+        width: 8rem;
+    }
+    .lodging-name
+    {
+        font-size: 1em;
+    }
+    .lodging-price
+    {
+        font-size: 0.9em;
+    }
+    .rating i
+    {
+        font-size: 0.75em;
+    }
+    .lodgings
+    {
+        border-radius: unset;
+        background-color:unset;
+    }
+    .lodgings h2
+    {
+        font-size: 1.4rem;
+    }
+    .lodgings-grid
+    {
+        grid-template-columns: unset;
+    }
+    .more
+    {
+        font-size: 1.2em;
+        margin-left: 0rem;
+    }
+    .activity
+    {
+        margin: auto;
+        width: 90%;
+    }
+    .activity-grid
+    {
+        display: flex;
+        grid-gap: 1.2rem;
+        flex-direction: column;
+    }
+    .activity-title
+    {
+        font-size: 1.4em;
+    }
+    figure
+    {
+        margin: auto;
+        height: 100%;
+        gap: unset;
+        box-shadow: 0.125rem 0.125rem 0.125rem#dfdbdb;
+        border-radius: 1.5rem;
+    }
+    figure img
+    {
+        width: 100%;
+        height: 8rem;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+    }
+    figcaption
+    {
+        font-size: 1em;
+        height: 2rem;
+        margin-top: 1rem;
+    }
+    footer
+    {
+        border-radius: unset;
+    }
+    footer h2
+    {
+        font-size: 1em;
+    }
+    footer li
+    {
+        font-size: 0.9em;
+    }
+    .about
+    {
+        margin-left: 2rem;
+    }
+    .our-lodgings
+    {
+        margin-left: 2rem;
+    }
+    .assistance
+    {
+        margin-left: 2rem;
     }
 }
