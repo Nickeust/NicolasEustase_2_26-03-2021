@@ -14,20 +14,23 @@ header
     flex-wrap: wrap;
     width: 94%;
     margin: auto;
+    max-width: 1440px
 }
 .logo img
 {
-    max-width: 20%;
+    max-width: 35%;
     padding-top: 0.625rem;
+    min-width: 8rem;
 }
 main
 {
     margin: auto;
     width: 94%;
+    max-width: 1440px
 }
 .menu li
 {
-    font-size: 0.8em;
+    font-size: 1em;
     min-width: 6.25rem;
     display:flex;
     justify-content: center;
@@ -36,7 +39,7 @@ main
 }
 .subscribe
 {
-    font-size: 0.8em;
+    font-size: 1em;
     min-width: 6.25rem;
     display: flex;
     justify-content: center;
@@ -77,7 +80,7 @@ main
 }
 .slogan-title
 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     min-width: 15rem;
     flex-wrap: wrap;
     margin-top: 1.5rem;
@@ -85,7 +88,7 @@ main
 }
 .slogan
 {
-    font-size: 0.7rem;
+    font-size: 1rem;
     min-width: 15rem;
 }
 form
@@ -114,7 +117,7 @@ button
 }
 .text-search-bar
 {
-    font-size: 0.7rem;
+    font-size: 1em;
     font-weight: bold;
     color: #ffffff;
 }
@@ -130,7 +133,7 @@ input
     border-bottom: 0.09rem solid #f2f2f2;
     border-left: none;
     border-right: none;
-    font-size: 0.8rem;
+    font-size: 1em;
     font-weight: bold;
     min-width: auto;
 }
@@ -148,7 +151,7 @@ input
 }
 .filters h2
 {
-    font-size: 0.8rem;
+    font-size: 1em;
     font-weight: bold;
 }
 .filters-list 
@@ -168,7 +171,7 @@ input
 .filters-list p
 {
     background-color: #ffffff;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: bold;
     border-top-right-radius:20rem;
     border-bottom-right-radius:20rem;
@@ -226,7 +229,7 @@ input
 }
 .result-number p
 {
-    font-size: 0.7em;
+    font-size: 1em;
     margin-left: 0.625rem;
     margin-bottom: 2rem;
 }
@@ -242,9 +245,9 @@ input
     border-radius: 1.2rem;
     padding: 1.5rem;
 }
-.lodgings h2
+.lodgings h1
 {
-    font-size: 1rem;
+    font-size: 1.3em;
     padding-bottom: 0.5rem;
 }
 .lodgings-grid
@@ -282,14 +285,14 @@ input
 {
     margin-top: 0.125rem;
     padding-left: 0.625rem;
-    font-size: 0.7em;
+    font-size: 1em;
     font-weight: bold;
     margin-bottom: 0rem;
 }
 .lodging-price
 {
     padding-left: 0.625rem;
-    font-size: 0.7em;
+    font-size: 1em;
     margin-top: 0rem;
 }
 .rating
@@ -309,13 +312,13 @@ input
 }
 .more
 {
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: bold;
     color: black;
-    margin-left: 0.938rem;
     text-decoration: none;
     display: flex;
     margin-top: 2rem;
+    padding-bottom: 1rem;
 }
 .populars
 {
@@ -341,9 +344,9 @@ input
 {
     font-size: 1em;
 }
-.populars h2
+.populars h1
 {
-    font-size: 1em;
+    font-size: 1.3em;
 }
 .populars-title
 {
@@ -385,7 +388,7 @@ input
 .activity-title
 {
     margin-top: 3rem;
-    font-size: 1em;
+    font-size: 1.3em;
     display: flex;
 
 }
@@ -436,11 +439,13 @@ figure img
 }
 figcaption
 {
-    font-size: 0.8em;
+    font-size: 1em;
     margin-left: 0.938rem;
     height: 1.563rem;
     padding-top: 0.313rem;
     color: black;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
 }
 .vieux-port
 {
@@ -474,42 +479,34 @@ figcaption
 
 footer
 {
-    display: flex;
-    align-items: baseline;
     margin-top: 2.5rem;
     background-color: #f2f2f2;
-    flex-wrap: wrap;
-    border-radius: 0.625rem 0.625rem;
     width: 100%;
+}
+.block-footer
+{
+    max-width: 1440px;
+    display: flex;
+    margin: auto;
+    padding: 0 2rem;
+    justify-content: space-between;
 }
 .about
 {
-    display: inline-block;
-    width: 20%;
-    min-width: 15rem;
-    margin-left: auto;
-    margin-right: auto;
+    width: 30%;
 }
 .our-lodgings
 {
-    display: inline-block;
-    width: 20%;
-    min-width: 15rem;
-    margin-left: auto;
-    margin-right: auto;
+    width: 30%;
 }
 .assistance
 {
-    display: inline-block;
-    width: 20%;
-    min-width: 15rem;
-    margin-left: auto;
-    margin-right: auto;
+    width: 30%;
 }
 footer h2
 {
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: 1.3em;
 }
 footer a
 {
@@ -526,7 +523,7 @@ footer ul
 }
 footer li
 {
-    font-size: 0.7em;
+    font-size: 1em;
     padding-bottom: 0.5rem; 
     flex-wrap: nowrap;
 }
@@ -543,6 +540,7 @@ footer li
     .lodgings-grid
     {
         gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
     }
     .populars
     {
@@ -620,6 +618,11 @@ footer li
         font-size: 0.94em;
         margin-bottom: 2rem;
     }
+    form
+    {
+        display: grid;
+        grid-template-columns: repeat(3,min-content);
+    }
     label
     {
         border-top-left-radius: 1.1rem;
@@ -650,8 +653,8 @@ footer li
     }
     input
     {
-        width: 14rem;
         font-size: 1em;
+        min-width: 0;
     }
     .filters
     {
@@ -803,9 +806,10 @@ footer li
         height: 2rem;
         margin-top: 1rem;
     }
-    footer
+    .block-footer
     {
-        border-radius: unset;
+        flex-direction: column;
+        padding: 0;
     }
     footer h2
     {
