@@ -16,17 +16,25 @@ header
     margin: auto;
     max-width: 1440px
 }
+.logo
+{
+    display: flex;
+    flex-grow: 1;
+}
 .logo img
 {
-    max-width: 35%;
     padding-top: 0.625rem;
-    min-width: 8rem;
+    width: 8em;
 }
 main
 {
     margin: auto;
     width: 94%;
     max-width: 1440px
+}
+.menu
+{
+    display: flex;
 }
 .menu li
 {
@@ -578,17 +586,23 @@ footer li
         margin: auto;
         width: 90%;
     }
+    .logo
+    {
+        order: -1;
+    }
     .logo img
     {
         max-width: 6rem;
         padding-left: 1rem;
     }
+    .menu
+    {
+        order: 2;
+    }
     .subscribe
     {
         font-size: 1em;
-        position: relative;
-        bottom: 3.2rem;
-        right: 7.5rem;
+        order: 1;
     }
     .menu ul 
     {
