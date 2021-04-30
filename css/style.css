@@ -347,7 +347,7 @@ input
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .fas.fa-chart-line
@@ -537,6 +537,17 @@ footer li
     padding-bottom: 0.5rem; 
     flex-wrap: nowrap;
 }
+@media screen and (max-width: 1060px) /* Medium screen */
+{
+    .section-1
+    {
+        grid-template-columns: 3fr 3fr;
+    }
+    .lodgings-grid
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 @media screen and (max-width: 769px) /* Tablettes */
 {
     header
@@ -550,11 +561,26 @@ footer li
     .lodgings-grid
     {
         gap: 1rem;
-        grid-template-columns: repeat(2, 1fr);
     }
     .populars
     {
         padding: 1rem;
+    }
+    .popular
+    {
+        height: 11rem;
+    }
+    .popular img
+    {
+        width: 40%;
+    }
+    .lodging-name
+    {
+        font-size: 0.8em;
+    }
+    .lodging-price
+    {
+        font-size: 0.8em;
     }
     .popular-grid
     {
@@ -782,7 +808,7 @@ footer li
     }
     .lodgings h2
     {
-        font-size: 1.4rem;
+        font-size: 0.9rem;
     }
     .lodgings-grid
     {
