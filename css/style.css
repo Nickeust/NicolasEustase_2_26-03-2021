@@ -268,7 +268,7 @@ input
 }
 .lodging
 {
-    background-color: #ffffff;
+    background-color: #fffffe;
     border-radius: 1rem;
     box-shadow: 0.125rem 0.25rem 0.125rem #dfdbdb;
     border: white 0.20rem solid;
@@ -367,7 +367,7 @@ input
 }
 .popular
 {
-    background-color: #ffffff;
+    background-color: #fffffe;
     border-radius: 0.9rem;
     box-shadow: 0.125rem 0.25rem 0.125rem #dfdbdb;
     border: white 0.32rem solid;
